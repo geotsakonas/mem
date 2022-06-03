@@ -8,9 +8,7 @@ mem(() => 1, {
 
 // Ensures that the various cache functions infer their arguments type from the return type of `cacheKey`
 mem((_arguments: {key: string}) => 1, {
-	cacheKey: (arguments_: [{key: string}]) => {
-		expectType<[{key: string}]>(arguments_);
-		return new Date();
+	cacheKey: (n new Date();
 	},
 	cache: {
 		get: key => {
