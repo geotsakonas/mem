@@ -1,0 +1,12 @@
+global:
+    violations:
+        exclude: 
+            - Missing Module Docstring
+
+modules:
+    - path: "/test-d"
+      languages:
+        - Typescript
+      violations:
+        exclude:
+          - Disallow unused variables
